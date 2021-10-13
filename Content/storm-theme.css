@@ -1,0 +1,13 @@
+﻿.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+html {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}

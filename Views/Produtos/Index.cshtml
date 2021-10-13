@@ -1,0 +1,45 @@
+﻿<center>
+    <div class="jumbotron">
+        <h1>PRODUTOS</h1>
+
+    </div>
+    <hr />
+</center>
+<div class="mb-1">
+    <a class="btn btn-outline-info" href="~/Produtos/AddEdit">Novo Produto  <i class="fas fa-plus-circle"></i>  </a>
+</div>
+
+<table class="table table-hover">
+    <tbody>
+        <tr class="table-secondary">
+            <td>Nome</td>
+            <td>Preço</td>
+            <td>Custo</td>
+            <td>Quantidade</td>
+            <td>Categoria</td>
+            <td>Marca</td>
+        </tr>
+    </tbody>
+    <tbody>
+        @foreach (Tabaca1._1.Models.Produto produtos in Model)
+
+        {
+        <tr id="produto-@produtos.Id">
+
+            <td>@produtos.Nome</td>
+            <td>@produtos.Preco</td>
+            <td>@produtos.PrecoCust</td>
+            <td>@produtos.Qtde</td>
+            <td>@produtos.TipoDeProduto.Nome</td>
+        </tr>
+
+
+        }
+
+
+
+    </tbody>
+
+
+
+</table>
